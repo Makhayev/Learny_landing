@@ -160,7 +160,7 @@
             </div>
             <!-- end of col -->
             <div class="col-lg-6">
-              <div class="image-container"> 
+              <div class="image-container">
                 <img
                   class="img-fluid"
                   src="images/header-teamwork.svg"
@@ -381,7 +381,10 @@
           <div class="col-lg-6">
             <!-- Request Form -->
             <div class="form-container">
-              <form method="POST" action="https://learny-backend.herokuapp.com/getEmail">
+              <form
+                method="POST"
+                action="https://learny-backend.herokuapp.com/getEmail"
+              >
                 <div class="form-group">
                   <input
                     type="email"
@@ -396,6 +399,7 @@
                 <div class="form-group">
                   <!-- <input type="submit" value="submit"> -->
                   <button
+                    onclick="emailSentSuccess()"
                     type="submit"
                     class="btn btn-warning form-control-submit-button"
                   >
@@ -496,6 +500,12 @@
     <!-- end of copyright -->
 
     <!-- Scripts -->
+    <script>
+      function emailSentSuccess() {
+        alert("Ваша почта успешно отправлена!");
+      }
+    </script>
+
     <script src="js/jquery.min.js"></script>
     <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script>

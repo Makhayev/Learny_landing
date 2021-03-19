@@ -379,8 +379,9 @@ input[type="checkbox"] {
   border: 1px solid #fadd4b;
   border-radius: 1.5rem;
   background-color: #fadd4b;
-  color: #fff;
-  font: 700 0.75rem/1.75rem "Raleway", sans-serif;
+  color: black;
+  font: 16px "Raleway", sans-serif;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -2153,6 +2154,10 @@ a:hover.back-to-top {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .form-container {
+    padding-top: 128px;
   }
 
   .ex-basic-2 .form-container {
